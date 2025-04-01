@@ -18,7 +18,7 @@ ffont = font.SysFont("Verdana", 60)
 font_small = font.SysFont("Verdana", 20)    
 game_over = ffont.render("You lost", True, (255, 255, 255))
 
-# Making Speeds and acceleration
+# Making Speeds
 espeed = 5
 pspeed = 7
 add_speed = True
