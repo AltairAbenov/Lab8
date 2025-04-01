@@ -21,7 +21,6 @@ game_over = ffont.render("You lost", True, (255, 255, 255))
 # Making Speeds
 espeed = 5
 pspeed = 7
-add_speed = True
 
 #Black Car Function
 class Enemy(sprite.Sprite):
@@ -36,11 +35,6 @@ class Enemy(sprite.Sprite):
         self.rect.move_ip(0, espeed)
         if self.rect.bottom > SCREEN_HEIGHT + 170:
             Score += 1
-            if add_speed:
-                espeed += 0.5
-                pspeed += 0.5
-            if espeed == 12:
-                add_speed = False
             self.rect.top = 0
             self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
